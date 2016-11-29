@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$RACK_ENV" == "production" ]; then
+  bundle exec puma -C config/puma.rb
+else
+  bundle exec rerun -- rackup --port 4000 config.ru
+fi

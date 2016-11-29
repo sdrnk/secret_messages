@@ -1,0 +1,24 @@
+<div class="mdl-card mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--2dp">
+  <div class="mdl-card__supporting-text ">
+    <h5>New message</h5>
+    <form action="/messages" method="post">
+      <br>
+      <div class="mdl-textfield mdl-js-textfield" style= "width: 100%">
+        <textarea class="mdl-textfield__input" name="message[body]" type="text" rows= "8" id="sample5" ></textarea>
+        <label class="mdl-textfield__label" for="sample5">Write a message...</label>
+      </div>
+      <br>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="message[destroy_immediately]" value="1" checked="checked">
+        <span class="mdl-radio__label">Destroy immediately</span>
+      </label>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="message[destroy_immediately]" value="0">
+        <span class="mdl-radio__label">Destroy in 1 hour after read</span>
+      </label>
+      <br><br>
+      <input type="Submit" value="Create new secret message" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+      <br>
+    </form>
+  </div>
+</div>

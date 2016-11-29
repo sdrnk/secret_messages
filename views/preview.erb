@@ -1,0 +1,20 @@
+<div class="demo-card-square mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--2dp" style="background:white">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">Message link:</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <div class="mdl-textfield mdl-js-textfield mdl-cell--10-col-desktop ">
+      <input class="mdl-textfield__input" type="text" id="message_link"
+        value="<%= url("/messages/#{@message.uid}") %>" readonly>
+    </div>
+  </div>
+  <div class="mdl-card__actions mdl-card--border" >
+    <a href="#" data-clipboard-target="#message_link" id="copy_message_url" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      Copy link to clipboard!
+    </a>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+<script>
+  new Clipboard('#copy_message_url');
+</script>

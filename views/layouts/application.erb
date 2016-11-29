@@ -1,0 +1,66 @@
+<!doctype html>
+<head>
+  <title>Secret Messages Service</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <style>
+    .flash {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 16px;
+      border-radius: 2px;
+      color: #212121;
+    }
+    .warning {
+      background-color: #FFF9C4;
+    }
+    .info {
+      background-color: #8bc34a;
+      color: white;
+    }
+    .error {
+      background-color: #C2185B;
+      color: white;
+    }
+  </style>
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Secret Messages service -->
+        <a href="/" style="color: white; text-decoration: none;" class="mdl-layout-title">
+          Secret Messages Service
+        </a>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="section--center mdl-grid mdl-grid--no-spacing">
+        <div class="section__circle-container mdl-cell mdl-cell--3-col mdl-cell--0-col-phone">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--7-col-desktop mdl-cell--10-col-tablet mdl-cell--0-col-phone">
+          </br></br>
+          <div class="mdl-cell--10-col-desktop">
+            <%= styled_flash %>
+          </div>
+          <%= yield %>
+        </div>
+    </section>
+  </main>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo">
+        HyperCoders &copy
+      </div>
+    </div>
+  </footer>
+</div>
+</body>

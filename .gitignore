@@ -1,0 +1,6 @@
+/db/secret_messages_development
+/db/secret_messages_test
+/public/assets*
+/tmp
+development.sqlite3
+.DS_Store
