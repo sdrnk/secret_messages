@@ -4,7 +4,7 @@ Web application creates a text self-destructing messages.
 
 Technologies uses: Sinatra, Sidekiq, ActiveRecord and AES
 
-http://secretletter.herokuapp.com/
+Demo — http://secretletter.herokuapp.com/
 
 
 use `./bin/console` to open console
